@@ -1,0 +1,41 @@
+// 4 Pillars of DOM
+// ▶ Selection of an Element
+// ▶ Changing HTML
+// ▶ Changing CSS 
+// ▶ Event Listener
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Phase</title>
+</head>
+<body>
+    <h2>DOM</h2>
+    <h3>Document Object Model</h3>
+  
+<script>
+    // ▶ Selection [.querySelector()]
+    var a = document.querySelector("h2").innerHTML = "MOM";
+    
+    // ▶ Changing HTML [.innerHTML]
+    var b = document.querySelector("h3");
+    b.innerHTML = "Mai Meri Ma ke liye Jeera Hu";
+    
+    // ▶ Changing CSS [.style.{property}]
+    var c = document.querySelector("h2").style.color = "red";
+    var d = document.querySelector("h3");
+    d.style.backgroundColor = "wheat";
+    
+    // ▶ Event Listener [.addEvenetListener("{action}", function(){})]
+    var e = document.querySelector("h3");
+    e.addEventListener("click", function(){
+        e.style.color = "#fff"
+        e.style.backgroundColor = "#000"
+        e.innerHTML = "Mai Meri Ma ke liye Jeera Hu 'GIRGIT'"
+    })
+  </script>
+  </body>
+</html>
