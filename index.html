@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Light Bulb</title>
+</head>
+
+<body>
+    <div id="bulb"></div>
+    <button>ON</button>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy Light';
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #bulb {
+            border-radius: 50%;
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        button {
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 80px 130px;
+            padding: 10px 18px;
+        }
+    </style>
+
+    <script>var bulb = document.querySelector("#bulb");
+        var btn = document.querySelector("button");
+        var flag = 0
+
+        btn.addEventListener("click", function () {
+            if (flag == 0) {
+                bulb.style.backgroundColor = "yellow";
+                btn.innerHTML = "ON"
+                console.log("ON now")
+                flag = 1
+            } else {
+                bulb.style.backgroundColor = "transparent";
+                btn.innerHTML = "OFF"
+                console.log("OFF now")
+                flag = 0
+            }
+
+        })</script>
+</body>
+
+</html>
